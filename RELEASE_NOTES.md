@@ -1,3 +1,6 @@
+### 0.3.1 - 04.28.2021
+* Refactor for .NET 5. by [@beauvankirk](https://github.com/beauvankirk)
+
 ### 0.3.0 - 08.06.2020
 * Exclude empty changes from the changelog list [#19](https://github.com/ionide/Waypoint/pull/19) by [@NicoVIII](https://github.com/NicoVIII)
 * Fix documentation build for Unix systems [#17](https://github.com/ionide/Waypoint/pull/17) by [@NicoVIII](https://github.com/NicoVIII)

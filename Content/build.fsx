@@ -1,8 +1,15 @@
 // --------------------------------------------------------------------------------------
 // FAKE build script
 // --------------------------------------------------------------------------------------
-#r "paket: groupref build //"
-#load ".fake/build.fsx/intellisense.fsx"
+#if FAKE
+    // #r "paket: groupref build //"
+#endif
+#load ".paket/load/netstandard2.0/Build/build.group.fsx"
+// #load ".fake/build.fsx/intellisense.fsx"
+#if !FAKE
+//   #r "netstandard"
+//   #r "Facades/netstandard.dll"
+#endif
 
 open Fake.Core
 open Fake.DotNet
@@ -185,6 +192,7 @@ Target.create "Push" (fun _ ->
 // --------------------------------------------------------------------------------------
 // Build order
 // --------------------------------------------------------------------------------------
+Target.create "DoNothing" DoNothing
 Target.create "Default" DoNothing
 Target.create "Release" DoNothing
 

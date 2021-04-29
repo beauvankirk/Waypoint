@@ -9,3 +9,5 @@ release.cmd
 build/
 /.vs/
 /Content/.vs/
+/Content/.paket/
+.paket/

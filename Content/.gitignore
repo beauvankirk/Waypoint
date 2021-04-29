@@ -10,3 +10,5 @@ release.sh
 _public
 build/
 out/
+.paket/
+paket.lock

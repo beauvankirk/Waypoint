@@ -1,5 +1,5 @@
 #r "../_lib/Fornax.Core.dll"
-#r "../../packages/docs/FSharp.Formatting/lib/netstandard2.0/FSharp.MetadataFormat.dll"
+#load "../../.paket/load/netstandard2.0/Docs/docs.group.fsx"
 
 open System
 open System.IO
