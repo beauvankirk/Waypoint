@@ -9,15 +9,9 @@
       ]
     },
     "paket": {
-      "version": "6.0.0-beta9",
+      "version": "6.0.0-rc002",
       "commands": [
         "paket"
-      ]
-    },
-    "fornax": {
-      "version": "0.13.1",
-      "commands": [
-        "fornax"
       ]
     }
   }

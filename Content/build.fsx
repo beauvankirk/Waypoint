@@ -98,9 +98,10 @@ Target.create "Test" (fun _ ->
     exec "dotnet" @"run --project .\tests\Waypoint.UnitTests\Waypoint.UnitTests.fsproj" "."
 )
 
-Target.create "Docs" (fun _ ->
-    exec "dotnet"  @"fornax build" "docs"
-)
+// Target.create "Docs" (fun _ ->
+//     exec "dotnet"  @"fornax build" "docs"
+// )
+Target.create "Docs" DoNothing
 
 // --------------------------------------------------------------------------------------
 // Release Targets
