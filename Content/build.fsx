@@ -2,14 +2,14 @@
 // FAKE build script
 // --------------------------------------------------------------------------------------
 #if FAKE
-    // #r "paket: groupref build //"
+#r "paket: groupref build //"
 #endif
-#load ".paket/load/netstandard2.0/Build/build.group.fsx"
-// #load ".fake/build.fsx/intellisense.fsx"
-#if !FAKE
+#load ".fake/build.fsx/intellisense.fsx"
+// #if !FAKE
+//     #load ".paket/load/netstandard2.0/Build/build.group.fsx"
 //   #r "netstandard"
 //   #r "Facades/netstandard.dll"
-#endif
+// #endif
 
 open Fake.Core
 open Fake.DotNet
