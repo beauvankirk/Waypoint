@@ -1,11 +1,11 @@
-version 6.0.0-rc002
+version 6.0.0-rc006
 
 source https://api.nuget.org/v3/index.json
 
 framework: netstandard2.0
 storage: none
 
-nuget FSharp.Core ~> 5.0.1
+nuget FSharp.Core ~> 5.0.2 redirects: force
 
 group Build
   source https://api.nuget.org/v3/index.json
@@ -15,15 +15,15 @@ group Build
 
   generate_load_scripts: true
 
-  nuget Fake.Core.Target 5.20.4
-  nuget Fake.Core.Process 5.20.4
-  nuget Fake.DotNet.Cli 5.20.4
-  nuget Fake.Core.ReleaseNotes 5.20.4
-  nuget Fake.DotNet.AssemblyInfoFile 5.20.4
-  nuget Fake.DotNet.Paket 5.20.4
-  nuget Fake.Tools.Git 5.20.4
-  nuget Fake.Core.Environment 5.20.4
-  nuget Fake.Core.UserInput 5.20.4
-  nuget Fake.IO.FileSystem 5.20.4
-  nuget Fake.DotNet.MsBuild 5.20.4
-  nuget Fake.Api.GitHub 5.20.4
+  nuget Fake.Core.Target ~> 5.20.4
+  nuget Fake.Core.Process ~> 5.20.4
+  nuget Fake.DotNet.Cli ~> 5.20.4
+  nuget Fake.Core.ReleaseNotes ~> 5.20.4
+  nuget Fake.DotNet.AssemblyInfoFile ~> 5.20.4
+  nuget Fake.DotNet.Paket ~> 5.20.4
+  nuget Fake.Tools.Git ~> 5.20.4
+  nuget Fake.Core.Environment ~> 5.20.4
+  nuget Fake.Core.UserInput ~> 5.20.4
+  nuget Fake.IO.FileSystem ~> 5.20.4
+  nuget Fake.DotNet.MsBuild ~> 5.20.4
+  nuget Fake.Api.GitHub ~> 5.20.4

@@ -1,11 +1,11 @@
-version 6.0.0-rc002
+version 6.0.0-rc006
 source https://api.nuget.org/v3/index.json
 
 storage: none
 framework: net5.0, netstandard2.0, netstandard2.1
 
 generate_load_scripts: true
-nuget FSharp.Core
+nuget FSharp.Core ~> 5.0.2 redirects: force
 
 group Test
   source https://api.nuget.org/v3/index.json
@@ -13,9 +13,9 @@ group Test
   storage: none
   framework: net5.0, netstandard2.0, netstandard2.1
 
-  nuget FSharp.Core
+  nuget FSharp.Core ~> 5.0.2 redirects: force
   nuget Expecto ~> 9.0.2
-  nuget FsCheck ~> 2.15.2
+  nuget FsCheck ~> 2.15.3
   nuget Expecto.FsCheck ~> 9.0.2
 
 
@@ -26,15 +26,15 @@ group Build
   generate_load_scripts: true
   storage: none
 
-  nuget Fake.Core.Target 5.20.4
-  nuget Fake.Core.Process 5.20.4
-  nuget Fake.DotNet.Cli 5.20.4
-  nuget Fake.Core.ReleaseNotes 5.20.4
-  nuget Fake.DotNet.AssemblyInfoFile 5.20.4
-  nuget Fake.DotNet.Paket 5.20.4
-  nuget Fake.Tools.Git 5.20.4
-  nuget Fake.Core.Environment 5.20.4
-  nuget Fake.Core.UserInput 5.20.4
-  nuget Fake.IO.FileSystem 5.20.4
-  nuget Fake.DotNet.MsBuild 5.20.4
-  nuget Fake.Api.GitHub 5.20.4
+  nuget Fake.Core.Target ~> 5.20.4
+  nuget Fake.Core.Process ~> 5.20.4
+  nuget Fake.DotNet.Cli ~> 5.20.4
+  nuget Fake.Core.ReleaseNotes ~> 5.20.4
+  nuget Fake.DotNet.AssemblyInfoFile ~> 5.20.4
+  nuget Fake.DotNet.Paket ~> 5.20.4
+  nuget Fake.Tools.Git ~> 5.20.4
+  nuget Fake.Core.Environment ~> 5.20.4
+  nuget Fake.Core.UserInput ~> 5.20.4
+  nuget Fake.IO.FileSystem ~> 5.20.4
+  nuget Fake.DotNet.MsBuild ~> 5.20.4
+  nuget Fake.Api.GitHub ~> 5.20.4

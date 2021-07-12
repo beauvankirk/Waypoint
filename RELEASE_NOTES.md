@@ -1,3 +1,6 @@
+### 0.3.2 - 07.11.2021
+* Package version updates. [@beauvankirk](https://github.com/beauvankirk)
+
 ### 0.3.1 - 04.28.2021
 * Refactor for .NET 5. by [@beauvankirk](https://github.com/beauvankirk)
 
